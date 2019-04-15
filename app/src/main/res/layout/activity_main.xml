@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.mainActivity.MainActivity">
+
+
+    <Button
+        android:id="@+id/bSensorNameList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="bSensorNameListOnClick"
+        android:text="@string/sensorNameList"
+        app:layout_constraintBottom_toTopOf="@+id/bAccelerometerData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bAccelerometerData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="bAccelerometerDataOnClick"
+        android:text="@string/accelerometerData"
+        app:layout_constraintBottom_toTopOf="@+id/bGpsData"
+        app:layout_constraintEnd_toEndOf="@+id/bSensorNameList"
+        app:layout_constraintStart_toStartOf="@+id/bSensorNameList"
+        app:layout_constraintTop_toBottomOf="@+id/bSensorNameList" />
+
+    <Button
+        android:id="@+id/bGpsData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="bGpsDataOnClick"
+        android:text="@string/gpsData"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bAccelerometerData"
+        app:layout_constraintStart_toStartOf="@+id/bAccelerometerData"
+        app:layout_constraintTop_toBottomOf="@+id/bAccelerometerData" />
+
+</android.support.constraint.ConstraintLayout>

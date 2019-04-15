@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Temp_03_03</string>
+    <string name="sensorNameList">Sensor List</string>
+    <string name="accelerometerData">Accelerometer Data</string>
+    <string name="gpsData">GPS Data</string>
+</resources>
